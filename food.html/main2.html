@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+        body{
+            margin: 0px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 13%;
+            margin-bottom: -10px;
+        }
+
+        nav .icon a{
+            padding: 0 0px;
+            position: relative;
+            left: 20px;
+        }
+
+        nav .fa{
+            padding: 0 10px;
+            color: black;
+            font-size: 25px;
+        }
+
+        .fa:hover{
+            color: orange;
+        }
+
+        #s1{
+            background-image: url("section1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 650px;
+        }
+
+        .content1 p1,p2,p3{
+            color: white;
+            position: relative;
+            bottom: 360px;
+            left: 185px;
+        }
+
+        p1{
+            font-size: 90px;
+        }
+
+        p2{
+            font-size: large;
+        }
+
+        p3{
+            font-size: 15px;
+        }
+
+        #c1,#c1-2{
+            color: tomato;
+        }
+
+        #c1-2{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        #c1{
+            text-decoration: none;
+        }
+
+        .menu{
+            background-color: rgba(255, 197, 5, 0.947);
+            width: 900px;
+            height: 247px;
+            margin-top: 0px;
+            position: relative;
+            bottom: 402px;
+        }
+
+        .menu p{
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            left: 600px;
+            top: 80px;
+        }
+
+        .meat{
+            background-image: url("meat.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 580px;
+            width: 400px;
+            position: relative;
+            bottom: 649px;
+            left: 170px;
+        }
+
+        .content2 p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            bottom: 993px;
+            left: 603px;
+            width: 330px;
+            line-height: 37px;
+            font-size: 17px;
+        }
+
+        #c2{
+            color: tomato;
+            text-decoration: none;
+        }
+
+        /* .c2-1,.c2-2,.c2-3,.c2-4,.c2-5,.c2-6,#c2{
+            font-size: 17px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            bottom: 980px;
+            left: 603px;
+        }
+
+        #c2{
+            color: tomato;
+            text-decoration: none;
+        }
+
+        .con2{
+            width: 325px;
+            display: block;
+        } */
+
+        .black{
+            background-color: black;
+            position: relative;
+            bottom: 970px;
+            left: 600px;
+            width: 247px;
+            height: 65px;
+        }
+
+        .cup{
+            background-image: url(cup.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 530px;
+            width: 383px;
+            position: relative;
+            bottom: 1390px; 
+            left: 940px;           
+        }
+
+        .orange{
+            background-color: rgba(255, 115, 0, 0.874);
+            width: 200px;
+            height: 250px;
+            position: relative;
+            bottom: 1875px;
+            left: 1323px;
+        }
+
+        #s2{
+            background-image: url("section2.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 910px;
+            position: relative;
+            bottom: 1575px;
+        }
+
+        /* .content3{
+            position: absolute;
+        } */
+
+        .heading{
+            font-size: 80px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(255, 115, 0, 0.874);
+            text-align: center;
+            position: relative;
+            bottom: 2433px;
+        }
+
+        .para{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            position: relative;
+            bottom: 2610px;
+        }
+
+        #c3{
+            color: tomato;
+            text-decoration: none;
+        }
+
+        /* .card{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        } */
+
+        .card1{
+            background-color: white;
+            width: 360px;
+            height: 430px;
+            position: relative;
+            bottom: 2675px;
+            left: 183px;
+        }
+
+        .number1 p{
+            font-size: 92px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            left: 32px;
+            top: 40px;
+        }
+
+        .heading1{
+            font-size: 42px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            left: 30px;
+            bottom: 35px;
+        }
+
+        .para1{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            left: 30px;
+            bottom: 50px;
+        }
+
+        #c4{
+            color: tomato;
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .card2{
+            background-color: rgba(0, 0, 0, 0.568);
+            width: 360px;
+            height: 430px;
+            position: relative;
+            bottom: 3197px;
+            left: 580px;
+        }
+
+        .number2 p{
+            font-size: 92px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            top: 40px;
+            left: 32px;
+            color: tomato;
+        }
+
+        .heading2{
+            font-size: 42px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            bottom: 35px;
+            left: 30px;
+            color: white;
+        }
+
+        .para2{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            bottom: 50px;
+            left: 30px;
+            color: white;
+        }
+
+        #c5{
+            color: tomato;
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .card3{
+            background-color: rgb(253, 127, 25);
+            width: 360px;
+            height: 430px;
+            position: relative;
+            bottom: 3719px;
+            left: 970px;
+        }
+
+        .number3 p{
+            font-size: 92px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            top: 40px;
+            left: 32px;
+            color: white;
+        }
+
+        .heading3{
+            font-size: 42px;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            bottom: 35px;
+            left: 26px;
+            color: white;
+        }
+
+        .para3{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            bottom: 50px;
+            left: 28px;
+            color: white;
+        }
+
+        #c6{
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .asian{
+            background-color: white;
+            width: 757px;
+            height: 600px;
+            margin-top: 0px;
+            position: relative;
+            bottom: 3674px;
+        }
+
+        .asian p{
+            font-size: 75px;
+            position: relative;
+            left: 563px;
+            top: 85px;
+        }
+
+        .asian-content p{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            position: relative;
+            bottom: 4060px;
+            right: 200px;
+            line-height: 30px;
+        }
+
+        .food{
+            background-color: rgba(255, 197, 5, 0.947);
+            width: 757px;
+            height: 600px;
+            margin-top: 0px;
+            position: relative;
+            bottom: 4487px;
+            left: 757px;
+        }
+
+        .food p{
+            font-size: 75px;
+            position: relative;
+            left: 23px;
+            top: 85px;
+        }
+
+        .food-content p{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            position: relative;
+            bottom: 4871px;
+            left: 195px;
+            line-height: 30px;
+        }
+
+        .food1{
+            background-image: url(food1.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 390px;
+            width: 390px;
+            position: relative;
+            left: 160px;
+            bottom: 4840px;
+        }
+
+        .food2{
+            background-image: url(food2.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 390px;
+            width: 390px;
+            position: relative;
+            left: 560px;
+            bottom: 5230px;
+        }
+
+        .food3{
+            background-image: url(food3.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 390px;
+            width: 390px;
+            position: relative;
+            left: 960px;
+            bottom: 5620px;
+        }
+
+        .golden-yellow{
+            background-color: rgba(255, 197, 5, 0.947);
+            width: 263px;
+            height: 590px;
+            position: relative;
+            bottom: 5570px;
+            left: 623px;
+        }
+
+        .food4{
+            background-image: url("food4.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 590px;
+            width: 623px;
+            position: relative;
+            bottom: 6550px;
+        }
+
+        .food5{
+            background-image: url("food5.jpeg");
+            background-size: cover;
+            background-position: bottom;
+            height: 590px;
+            width: 633px;
+            position: relative;
+            bottom: 7140px;
+            left: 885px;
+        }
+
+        .letters{
+            display: flex;
+            align-items: center;
+            font-size: xxx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 0px;
+            /* position: relative;
+            right: 20px; */
+        }
+
+        .letter2{
+            position: relative;
+            left: 20px;
+        }
+
+        .letter1 #p4{
+            position: relative;
+            left: 14px;
+        }
+
+        .letter1 #p3{
+            position: relative;
+            left: 12px;
+        }
+
+        .letter1 #p2{
+            position: relative;
+            left: 13px;
+        }
+
+        .letter1 #p1{
+            position: relative;
+            left: 8px;
+        }
+
+        .letter2 #p8{
+            position: relative;
+            left: 1px;
+        }
+        
+        .letter2 #p7{
+            position: relative;
+            left: 8px;
+        }
+
+        .letter2 #p6{
+            position: relative;
+            left: 14px;
+        }
+
+        .letter2 #p5{
+            position: relative;
+            left: 10px;
+        }
+
+        .letter3{
+            font-size: xxx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            bottom: 500px;
+            left: 25px;
+        }
+
+        .letters,.letter3{
+            position: relative;
+            left: 693px;
+            bottom: 6060px;
+        }
+
+        .orange2{
+            background-color: rgba(255, 102, 0, 0.91);
+            width: 550px;
+            height: 290px;
+            position: relative;
+            bottom: 7140px;
+        }
+
+        .food6{
+            background-image: url("food6.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 330px;
+            height: 330px;
+            position: relative;
+            bottom: 7380px;
+            left: 177px;
+        }
+
+        .food7{
+            background-image: url("food7.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 330px;
+            height: 330px;
+            position: relative;
+            bottom: 7710px;
+            left: 535px;
+        }
+
+        .farm-products-content{
+            position: relative;
+            left: 920px;
+            bottom: 8010px;
+        }
+
+        .heading4{
+            font-size: 42px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 132, 71);
+        }
+
+        .para4{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            bottom: 22px;
+            line-height: 30px;
+        }
+
+        #c7{
+            color: rgb(255, 132, 71);
+            text-decoration: none;
+            border-bottom: 2px solid;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            position: relative;
+            bottom: 10px;
+        }
+
+        #footer{
+            background-image: url("footer.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 1000px;
+            width: 1550px;
+            position: relative;
+            bottom: 7950px;
+        }
+        
+        .footer-content{
+            position: relative;
+            left: 220px;
+            bottom: 8318px;
+            color: white;
+            width: 540px;
+        }
+
+        
+
+        .heading5{
+            /* color: white; */
+            display: flex;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        .para5{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 30px;
+            position: relative;
+            bottom: 15px;
+        }
+
+        #c8{
+            color: tomato;
+            text-decoration: none;
+        }
+
+        .footer-content .icons a{
+            padding: 0 5px;
+        }
+
+        .footer-content .fa{
+            padding: 0 5px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href><img src="logo.png" alt></a>
+            </div>
+            <div class="icon">
+                <a href><b><i class="fa fa-bars" aria-hidden="true"></i></b></a>
+            </div>
+        </nav>
+        <section id="s1"></section>
+        <div class="content1">
+            <p1><b>HOMEMADE</b><br>RESTAURANT<br></p1>
+            <p2>Uis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum<br>dolore eu fugiat nulla pariatur Image from<a href
+                    id="c1"> Freepik</a></p2><br><br><br><p3><a href
+                    id="c1-2"><b>LEARN MORE</b></a></p3>
+        </div>
+        <section>
+            <div class="menu">
+                <p><b>Menu</b></p>
+            </div>
+            <div class="meat"></div>
+            <div class="content2">
+                <p><b>Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.<br><br>
+                        <a href="" id="c2">learn more</a></b></p>
+            </div>
+            <!-- <div class="con2">
+            <div>
+                <p1 class="c2-1"><b>Duis aute irure dolor in reprehenderit in</b></p1> <br><br><br>
+            </div>
+            <div>
+                <p2 class="c2-2"><b>voluptate velit esse cillum dolore eu</b></p2><br>
+                <p3 class="c2-3"><b>fugiat nulla pariatur. Excepteur sint</b></p3><br>
+            </div>
+            <div>  
+                <p4 class="c2-4"><b>occaecat cupidatat non proident, sunt in</b></p4><br><br>
+                <p5 class="c2-5"><b>culpa qui officia deserunt mollit anim id</b></p5><br><br>
+                <p6 class="c2-6"><b>est laborum</b></p6><br><br><br><a href="" id="c2"><b>learn more</b></a>
+            </div> -->
+        
+            <div class="black">
+                <p>.</p>
+            </div>
+            <div class="cup"></div>
+            <div class="orange"></div>
+        </section>
+        <section id="s2"></section>
+        <div class="content3">
+            <div class="heading">
+                <p>Learn <b>Cooking</b> Online</p><br>
+            </div>
+            <div class="para">
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                incididunt ut labore et dolore magna aliqua</i><br><br>IMAGE FROM<a href="" id="c3"><b> FREEPIK</b></a></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card1">
+                <div class="number1">
+                    <p><b>1</b></p>
+                </div>
+                <div class="heading1">
+                    <p><b>Base Meals</b></p>
+                </div>
+                <div class="para1">
+                    <p>Duis aute irure dolor in reprehenderit in<br>voluptate velit esse cillum dolore eu<br>fugiat nulla pariatur<br><br><a href="" id="c4"><b>LEARN MORE</b></a></p>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="number2">
+                    <p><b>2</b></p>
+                </div>
+                <div class="heading2">
+                    <p><b>Knife Skills</b></p>
+                </div>
+                <div class="para2">
+                    <p>Duis aute irure dolor in reprehenderit in<br>voluptate velit esse cillum dolore eu<br>fugiat nulla pariatur<br><br><a href="" id="c5"><b>LEARN MORE</b></a></p>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="number3">
+                    <p><b>3</b></p>
+                </div>
+                <div class="heading3">
+                    <p><b>Cooking Chicken</b></p>
+                </div>
+                <div class="para3">
+                    <p>Duis aute irure dolor in reprehenderit in<br>voluptate velit esse cillum dolore eu<br>fugiat nulla pariatur<br><br><a href="" id="c6"><b>LEARN MORE</b></a></p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="asian">
+                <p><b>Asian</b></p>
+            </div>
+            <div class="asian-content">
+                <p>While it is important to have naturally<br>occurring sugars in your diet, many foods<br>contain harmful added sugars that<br>contain no nutritional value.</p>
+            </div>
+            <div class="food">
+                <p><b>Food</b></p>
+            </div>
+            <div class="food-content">
+                <p>While it is important to have naturally<br>occurring sugars in your diet, many foods<br>contain harmful added sugars that<br>contain no nutritional value.</p>
+            </div>
+            <div>
+                <div class="food1"></div>
+                <div class="food2"></div>
+                <div class="food3"></div>
+            </div>
+        </section>
+        <section>
+            <div class="golden-yellow"></div>
+            <div class="letters">
+                <div class="letter1">
+                    <p id="p1"><b>M</b></p>
+                    <p id="p2"><b>E</b></p>
+                    <p id="p3"><b>A</b></p>
+                    <p id="p4"><b>T</b></p>
+                </div>
+                <div class="letter2">
+                    <p id="p5"><b>F</b></p>
+                    <p id="p6"><b>I</b></p>
+                    <p id="p7"><b>S</b></p>
+                    <p id="p8"><b>H</b></p>
+                </div>
+            </div>
+            <div class="letter3">
+                <p><b>AND</b></p>
+            </div>
+            <div class="food4"></div>
+            <div class="food5"></div>
+        </section>
+        <section>
+            <div class="orange2"></div>
+            <div class="farm-products">
+                <div class="food6"></div>
+                <div class="food7"></div>
+                <div class="farm-products-content">
+                    <div class="heading4">
+                        <p><b>Farm Products</b></p>
+                    </div>
+                    <div class="para4">
+                        <p>The use of local farm products lorem ipsum dolor<br>sit amet, consectetur adipisicingelit nullam nunc<br>justo sagittis suscipit ultrices.<br><br><a href="" id="c7"><b>LEARN MORE</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer"></section>
+        <div class="footer-content">
+            <div class="heading5">
+                <p>F R E S H &nbsp;&nbsp;</p> 
+                <p>F O O D &nbsp;&nbsp;</p>   
+                <p>E V E R Y D A Y</p> 
+            </div>
+            <div class="para5">
+                <p>Our Restaurant is a family-owned restaurant that has been proudly<br>serving around the 1940s located on the corner of Broadway and<br>West 112th Street in New York, <a href="" id="c8">learn more</a></p>
+            </div>
+            <div class="icons">
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </body>
+</html>
