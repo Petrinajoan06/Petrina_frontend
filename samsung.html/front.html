@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung</title>
+    <link rel="stylesheet" href="samsung.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <style>
+
+        body{
+            margin: 0px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 4% 5px 2.5%;
+            /* box-shadow: 2px 1px gray; */
+            gap: 10px;
+        }
+
+        #logo{
+            width: 130px;
+            height:28px;
+            margin-top: 10px;
+        }
+
+        .links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 300px;
+            /* margin-left: 175px; */
+            gap: 28px;
+            margin-top: 5px;
+        }
+
+        .links a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+        }
+
+        #search{
+            width: 170px;
+            height: 43px;
+            border-radius: 20px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            right: 150px;
+            top: 45px;
+            border: none;
+        }
+
+        #search::placeholder{
+            font-size: 17.5px;
+            position: absolute;
+            left: 38px;
+            top: 12px;
+        }
+
+        #search:hover{
+            border: 1px solid;
+            border-color: gray;
+        }
+        
+        #s-icon{
+            position: absolute;
+            right: 295px;
+            top: 58px;
+            text-decoration: none;
+            color: rgba(10, 10, 10, 0.642);
+        }    
+
+        .icons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .icons a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .top{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            right: 60px;
+            top: 8px;
+        }
+
+        .top a{
+            text-decoration: none;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+        }
+
+        .links-shop:hover{
+            text-decoration: none;
+            border-bottom: 2px solid; 
+        }
+
+        .links-mobile:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .links-TV:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .links-app:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .links-comp:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        #links-acc:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        #links-smart:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .links-AI:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .top-support:hover{
+            text-decoration: none;
+            border-bottom: 2px solid;
+        }
+
+        .dd-1{
+            display: flex;
+            gap: 80px;
+            line-height: 30px;
+            margin-left: 50px;
+        }
+
+        .dd-1 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-1-3{
+            border-left: 1.5px solid;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+
+        
+        .dd-1-4{
+            margin-left: -40px;
+        }
+
+        #dd-1-4-1{
+            width: 200px;
+            height: 150px;
+        }
+
+        .links-shop{
+            position: relative;
+            display: inline-block; 
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .drop1{
+            display: none;
+            position: absolute;
+            top: 60px;
+            width: 1518.5px;
+            height: 500px;
+            left: -230px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px);
+        }
+
+        .links-shop:hover .drop1{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 1;
+        }
+
+        #white:hover{
+            color: gray;
+        }
+
+        #gray{
+            color: rgb(90, 90, 90);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-2{
+            display: flex;
+            line-height: 30px;
+            margin-left: 50px;
+        }
+
+        .dd-2 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-2-2{
+            border-left: 1.5px solid;
+            margin-top: 20px;
+            margin-left: 330px;
+        }
+
+        .dd-2-3{
+            margin-left: 35px;
+        }
+
+        .dd-2-4{
+            display: flex;
+            gap: 10px;
+        }
+
+        .dd-2-4-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-4-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 620px;
+            top: 90px;
+        }
+
+        #dd-2-4-H1{
+            position: absolute;
+            top: 200px;
+        }
+
+        .dd-2-4-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-4-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 90px;
+            left: 805px;
+        }
+
+        #dd-2-4-H2{
+            position: absolute;
+            top: 200px;
+        }
+
+        .dd-2-4-G3{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-4-P3{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 90px;
+            left: 975px;
+        }
+
+        #dd-2-4-H3{
+            position: absolute;
+            top: 200px;
+        }
+
+        .dd-2-4-G4{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-4-P4{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 90px;
+            right: 295px;
+        }
+
+        #dd-2-4-H4{
+            position: absolute;
+            top: 200px;
+        }
+
+        .dd-2-4-G5{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-4-P5{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 90px;
+            right: 115px;
+        }
+
+        #dd-2-4-H5{
+            position: absolute;
+            top: 200px;
+        }
+
+        .dd-2-5{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 250px;
+        }
+
+        .dd-2-5-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-5-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 18px;
+            left: 39px;
+        }
+
+        #dd-2-5-H1{
+            position: absolute;
+            top: 125px;
+        }
+
+        .dd-2-5-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-5-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 222px;
+        }
+
+        #dd-2-5-H2{
+            position: absolute;
+            top: 125px
+        }
+
+        .dd-2-5-G3{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-5-P3{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 414px;
+        }
+
+        #dd-2-5-H3{
+            position: absolute;
+            top: 125px;
+        }
+
+        .dd-2-5-G4{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-2-5-P4{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 19px;
+            left: 595px;
+        }
+
+        #dd-2-5-H4{
+            position: absolute;
+            top: 125px;
+        }
+
+        .links-mobile{
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .drop2{
+            display: none;
+            position: absolute;
+            top: 60px;
+            width: 1523px;
+            height: 530px;
+            left: -311px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px);
+        }
+
+        .links-mobile:hover .drop2{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 1;
+        }
+
+        .dd-3{
+            display: flex;
+            gap: 120px;
+            line-height: 30px;
+            margin-left: 50px;
+        }
+
+        .dd-3 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-3-4{
+            border-left: 1.5px solid;
+            margin-top: 20px;
+            margin-left: -50px;
+        }
+
+        .dd-3-5{
+            margin-left: -70px;
+        }
+
+        .dd-3-6{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 80px;
+        }
+
+        .dd-3-6-G1{
+            border: none;
+            width: 170px;
+            height: 120px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 20px;
+        }
+
+        #dd-3-6-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-3-6-H1{
+            position: absolute;
+            top: 125px;
+        }
+
+        .dd-3-6-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 210px;
+        }
+
+        #dd-3-6-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-3-6-H2{
+            position: absolute;
+            top: 125px;
+        }
+
+        .dd-3-7{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 250px;
+        }
+
+        .dd-3-7-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 20px;
+        }
+
+        #dd-3-7-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-3-7-H1{
+            position: absolute;
+            top: 125px;
+        }
+
+        .dd-3-7-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 210px;
+        }
+
+        #dd-3-7-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-3-7-H2{
+            position: absolute;
+            top: 125px;
+        }
+
+        .links-TV{
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .drop3{
+            display: none;
+            position: absolute;
+            top: 60px;
+            width: 1515px;
+            height: 520px;
+            left: -390px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px)
+        }
+
+        .links-TV:hover .drop3{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 1;
+        }
+
+        .dd-4{
+            display: flex;
+            gap: 85px;
+            line-height: 30px;
+            margin-left: 50px;
+        }
+
+        .dd-4 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-4-4{
+            border-left: 1.5px solid;
+            margin-top: 20px;
+            margin-left: -35px;
+            height: 630px;
+        }
+
+        .dd-4-5{
+            margin-left: -50px;
+        }
+
+        .dd-4-6{
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 80px;
+            right: 230px;
+        }
+
+        .dd-4-6-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            /* position: absolute; */
+        }
+
+        #dd-4-6-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-4-6-H1{
+            position: absolute;
+            top: 125px;
+        }
+
+        .dd-4-6-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 180px;
+        }
+
+        #dd-4-6-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-4-6-H2{
+            position: absolute;
+            top: 130px;
+            line-height: 20px;
+        }
+
+        .dd-4-7{
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 280px;
+            right: 230px;
+        }
+
+        .dd-4-7-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-4-7-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-4-7-H1{
+            position: absolute;
+            top: 125px;
+            line-height: 20px;
+        }
+
+        .dd-4-7-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 180px;
+        }
+
+        #dd-4-7-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-4-7-H2{
+            position: absolute;
+            top: 125px;
+            line-height: 20px;
+        }
+
+        .dd-4-8{
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 470px;
+            right: 230px;
+        }
+
+        .dd-4-8-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+        }
+
+        #dd-4-8-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-4-8-H1{
+            position: absolute;
+            top: 125px;
+            line-height: 20px;
+        }
+
+        .dd-4-8-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 180px;
+        }
+
+        #dd-4-8-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-4-8-H2{
+            position: absolute;
+            top: 125px;
+        }
+
+        .links-app{
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .drop4{
+            display: none;
+            position: absolute;
+            top: 60px;
+            width: 1498px;
+            height: 690px;
+            left: -479px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px);
+        }
+
+        .links-app:hover .drop4{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 1;
+        }
+
+        .dd-5{
+            display: flex;
+            gap: 70px;
+            line-height: 30px;
+            margin-left: 40px;
+        }
+
+        .dd-5 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-5-4{
+            border-left: 1.5px solid;
+            margin-top: 20px;
+            margin-left: -35px;
+        }
+
+        .dd-5-5{
+            margin-left: -35px;
+        }
+
+        .dd-5-6{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 80px;
+        }
+
+        .dd-5-6-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 10px;
+        }
+
+        #dd-5-6-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-5-6-H1{
+            position: absolute;
+            top: 125px;
+        }
+
+        .dd-5-6-G2{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 190px;
+        }
+
+        #dd-5-6-P2{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-5-6-H2{
+            position: absolute;
+            top: 125px;
+            line-height: 20px;
+        }
+
+        .dd-5-7{
+            position: absolute;
+            top: 270px;
+        }
+
+        .dd-5-7-G1{
+            border: none;
+            height: 120px;
+            width: 170px;
+            border-radius: 8px;
+            background-color: rgb(247,247,247);
+            position: absolute;
+            left: 10px;
+        }
+
+        #dd-5-7-P1{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 20px;
+            left: 45px;
+        }
+
+        #dd-5-7-H1{
+            position: absolute;
+            top: 125px;
+            line-height: 20px;
+        }
+
+        .links-comp{
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .drop5{
+            display: none;
+            position: absolute;
+            top: 60px;
+            width: 1499px;
+            height: 570px;
+            left: -599.5px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px);
+        }
+
+        .links-comp:hover .drop5{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 1;
+        }
+
+        .dd-6{
+            display: flex;
+            gap: 80px;
+            margin-left: 50px;
+            line-height: 30px;
+        }
+
+        .dd-6 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-6-2{
+            border-left: 1.5px solid;
+            margin-top: 20px;
+            margin-left: 470px;
+            height: 220px;
+        }
+
+        .dd-6-3{
+            margin-left: -40px;
+        }
+
+        #dd-6-3-P1{
+            width: 170px;
+            height: 120px;
+            border-radius: 8px;
+        }
+
+        #dd-6-3-H1{
+            position: absolute;
+            top: 205px;
+            margin-left: -170px;
+        }
+
+        .links-AI{
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .drop6{
+            display: none;
+            position: absolute;
+            top: 60px;
+            width: 1519px;
+            height: 300px;
+            left: -1050px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgbs(0, 0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px);
+        }
+
+        .links-AI:hover .drop6{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 1;
+        }
+
+        .dd-7{
+            display: flex;
+            gap: 150px;
+            line-height: 30px;
+            margin-left: 60px;
+        }
+
+        .dd-7 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dd-7-3{
+            border-left: 1.5px solid;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .dd-7-4{
+            margin-left: -110px;
+        }
+
+        .dd-7-5{
+            display: flex;
+            gap: 10px;
+        }
+
+        #dd-7-5-P1{
+            height: 120px;
+            width: 170px;
+        }
+
+        #dd-7-5-H1{
+            position: absolute;
+            top: 200px;
+            margin-left: -170px;
+        }
+
+        #dd-7-5-P2{
+            height: 120px;
+            width: 170px;
+        }
+
+        #dd-7-5-H2{
+            position: absolute;
+            top: 200px;
+            margin-left: -170px;
+        }
+        #dd-7-5-P3{
+            height: 120px;
+            width: 170px;
+        }
+
+        #dd-7-5-H3{
+            position: absolute;
+            top: 200px;
+            margin-left: -170px;
+        }
+        #dd-7-5-P4{
+            height: 120px;
+            width: 170px;
+        }
+
+        #dd-7-5-H4{
+            position: absolute;
+            top: 200px;
+            margin-left: -170px;
+        }
+
+        .top-support{
+            position: relative;
+            display: inline-block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .drop7{
+            display: none;
+            position: absolute;
+            top: 99px;
+            width: 1515px;
+            height: 420px;
+            left: -1302px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgbs(0, 0, 0, 0);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px);
+        }
+
+        .top-support:hover .drop7{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="samsung.jpg" alt="" id="logo">
+        </div>
+        <div class="links">
+            <!-- shop start -->
+            <div class="links-shop">
+                <a href=""><b>Shop</b></a>
+                <!-- start drop down 1 -->
+                <div class="drop1">
+                    <div class="dd-1">
+                        <div class="dd-1-1">
+                            <p id="gray">OFFERS</p>
+                            <a href="" id="white">All Offers</a><br>
+                            <a href="" id="white">Mobile Offers</a><br>
+                            <a href="" id="white">Television Offers</a><br>
+                            <a href="" id="white">Refrigerator Offers</a><br>
+                            <a href="" id="white">Washing Machine Offers</a><br>
+                            <a href="" id="white">Laptop & Monitor Offers</a><br><br>
+                            <p id="gray">SPECIAL STORES</p>
+                            <a href="" id="white">Corporate Employee Program</a><br>
+                            <a href="" id="white">Samsung Student Advantage</a><br>
+                            <a href="" id="white">Defence Purchase Program</a><br>
+                        </div>
+                        <div class="dd-1-2">
+                            <p id="gray">BENEFITS</p>
+                            <a href="" id="white">Overview</a><br>
+                            <a href="" id="white">Samsung Finance+</a><br>
+                            <a href="" id="white">Samsung Axis Bank Credit Card</a><br>
+                            <a href="" id="white">Samsung Wallet</a><br>
+                            <a href="" id="white">Samsung Care+</a><br>
+                            <a href="" id="white">Delivery & Installation</a><br>
+                            <a href="" id="white">Mobile Trade-in</a><br>
+                            <a href="" id="white">Smart Club Loyalty Program</a><br>
+                            <a href="" id="white">Samsung Referral Advantage</a><br>
+                            <a href="" id="white">Samsung BKC</a><br>
+                        </div>
+                        <div class="dd-1-3"></div>
+                        <div class="dd-1-4">
+                            <p id="gray">NEW & FEATURED</p>
+                            <div>
+                                <a href=""><img src="machine1.png" alt="" id="dd-1-4-1"></a>
+                            </div>
+                            <a href="">Samsung live</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end drop down 1 -->
+            </div>
+            <!-- shop end -->
+
+            <!-- mobile start -->
+             <div class="links-mobile">
+                <a href=""><b>Mobile</b></a>
+                <!-- start drop down 2 -->
+                <div class="drop2">
+                    <div class="dd-2">
+                        <div class="dd-2-1">
+                            <p id="gray">MOBILE</p>
+                            <a href="" id="white">Discover Mobile</a><br>
+                            <a href="" id="white">Galaxy Smartphone</a><br>
+                            <a href="" id="white">Galaxy Tab</a><br>
+                            <a href="" id="white">Galaxy Book(Laptops)</a><br>
+                            <a href="" id="white">Galaxy Watch</a><br>
+                            <a href="" id="white">Galaxy Buds</a><br>
+                            <a href="" id="white">Galaxy Ring</a><br>
+                            <a href="" id="white">Galaxy Accessories</a><br>
+                            <a href="" id="white">Galaxy AI</a><br>
+                            <a href="" id="white">One UI</a><br>
+                            <a href="" id="white">Samsung Health</a><br>
+                            <a href="" id="white">Apps & Services</a><br>
+                            <a href="" id="white">Why Galaxy</a><br>
+                            <a href="" id="white">Switch to Galaxy</a>
+                        </div>
+                        <div class="dd-2-2"></div>
+                        <div class="dd-2-3">
+                            <p id="gray">NEW & FEATURED</p>
+                            <div class="dd-2-4">
+                                <div class="dd-2-4-G1">
+                                    <a href=""><img src="machine2.png" alt="" id="dd-2-4-P1"></a>
+                                    <a href="" id="dd-2-4-H1">Galaxy Z Fold6</a>
+                                </div>
+                                <div class="dd-2-4-G2">
+                                    <a href=""><img src="machine3.png" alt="" id="dd-2-4-P2"></a>
+                                    <a href="" id="dd-2-4-H2">Galaxy Z Flip6</a>
+                                </div>
+                                <div class="dd-2-4-G3">
+                                    <a href=""><img src="machine4.png" alt="" id="dd-2-4-P3"></a>
+                                    <a href="" id="dd-2-4-H3">Galaxy S24 Ultra</a>
+                                </div>  
+                                <div class="dd-2-4-G4">
+                                    <a href=""><img src="machine5.png" alt="" id="dd-2-4-P4"></a>
+                                    <a href="" id="dd-2-4-H4">Galaxy S24 | S24+</a>
+                                </div>
+                                <div class="dd-2-4-G5">
+                                    <a href=""><img src="machine6.png" alt="" id="dd-2-4-P5"></a>
+                                    <a href="" id="dd-2-4-H5">Galaxy S24 FE</a>
+                                </div>
+                            </div>
+                            <div class="dd-2-5">
+                                <div class="dd-2-5-G1">
+                                    <a href=""><img src="machine7.png" alt="" id="dd-2-5-P1"></a>
+                                    <a href="" id="dd-2-5-H1">Galaxy Tab S10 series</a>
+                                </div>
+                                <div class="dd-2-5-G2">
+                                    <a href=""><img src="machine8.png" id="dd-2-5-P2"></a>
+                                    <a href="" id="dd-2-5-H2">Galaxy Watch Ultra<a>
+                                </div>
+                                <div class="dd-2-5-G3">
+                                    <a href=""><img src="machine9.png" alt="" id="dd-2-5-P3"></a>
+                                    <a href="" id="dd-2-5-H3">Galaxy Buds3</a>
+                                </div>
+                                <div class="dd-2-5-G4">
+                                    <a href=""><img src="machine10.png" alt="" id="dd-2-5-P4"></a>
+                                    <a href="" id="dd-2-5-H4">Galaxy AI</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end drop down 2 -->
+             </div>
+            <!-- mobile end -->
+
+            <!-- TV & AV start -->
+            <div class="links-TV">
+                <a href=""><b>TV & AV</b></a>
+                <!-- start drop down 3 -->
+                <div class="drop3">
+                    <div class="dd-3">
+                        <div class="dd-3-1">
+                            <p id="gray">TVS</p>
+                            <a href="" id="white">All TVs</a><br>
+                            <a href="" id="white">Neo QLED</a><br>
+                            <a href="" id="white">OLED</a><br>
+                            <a href="" id="white">QLED 4K</a><br>
+                            <a href="" id="white">Crystal 4K UHD</a><br>
+                            <a href="" id="white">The Frame</a><br>
+                            <a href="" id="white">The Serif</a><br>
+                            <a href="" id="white">TV Accessories</a>
+                        </div>
+                        <div class="dd-3-2">
+                            <p id="gray">TVS BY SIZES</p>
+                            <a href="" id="white">2.47 m (98) TVs</a><br>
+                            <a href="" id="white">2.16 m (85) TVs</a><br>
+                            <a href="" id="white">1.89 m (75) TVs</a><br>
+                            <a href="" id="white">1.63 m (65) TVs</a><br>
+                            <a href="" id="white">1.38 m (55) TVs</a><br>
+                            <a href="" id="white">1.25 m (50) TVs</a><br>
+                            <a href="" id="white">1.08 m (43) TVs</a><br>
+                            <a href="" id="white">80 cm (32) TVs</a><br><br>
+                            <p id="gray">TVS BY RESOLUTION</p>
+                            <a href="" id="white">8K TVs</a><br>
+                            <a href="" id="white">4K TVs</a><br>
+                            <a href="" id="white">Full HD/HD TVs</a>
+                        </div>
+                        <div class="dd-3-3">
+                            <p id="gray">SOUND DEVICES</p>
+                            <a href="" id="white">All Sound Devices</a><br>
+                            <a href="" id="white">Q-Series Soundbars</a><br>
+                            <a href="" id="white">Music Frame</a><br>
+                            <a href="" id="white">Sound Tower</a><br><br>
+                            <p id="gray">PROJECTORS</p>
+                            <a href="" id="white">All Projectors</a><br>
+                            <a href="" id="white">The Premiere</a><br>
+                            <a href="" id="white">The Freestyle</a>
+                        </div>
+                        <div class="dd-3-4"></div>
+                        <div class="dd-3-5">
+                            <p id="gray">DISCOVER</p>
+                            <a href="" id="white">Why Samsung TV</a><br>
+                            <a href="" id="white">Why 8K TV</a><br>
+                            <a href="" id="white">Why Neo QLED</a><br>
+                            <a href="" id="white">Why Samsung OLED</a><br>
+                            <a href="" id="white">Samsung Smart TV</a><br>
+                            <a href="" id="white">Best Gaming TV</a><br><br>
+                            <p id="gray">BUYING GUIDE</p>
+                            <a href="" id="white">TV Buying Guide</a>
+                        </div>
+                        <div>
+                            <div class="dd-3-6">
+                                <div class="dd-3-6-G1">
+                                    <a href=""><img src="machine11.png" alt="" id="dd-3-6-P1"></a>
+                                    <a href="" id="dd-3-6-H1">Discover TVs</a>
+                                </div>
+                                <div class="dd-3-6-G2">
+                                    <a href=""><img src="machine12.png" alt="" id="dd-3-6-P2"></a>
+                                    <a href="" id="dd-3-6-H2">Discover Lifestyle TVs</a>
+                                </div>
+                            </div>
+                            <div class="dd-3-7">
+                                <div class="dd-3-7-G1">
+                                    <a href=""><img src="machine13.png" alt="" id="dd-3-7-P1"></a>
+                                    <a href="" id="dd-3-7-H1">Discover Sound Devices</a>
+                                </div>
+                                <div class="dd-3-7-G2">
+                                    <a href=""><img src="machine14.png" alt="" id="dd-3-7-P2"></a>
+                                    <a href="" id="dd-3-7-H2">Discover Projectors</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Appliances start -->
+            <div class="links-app">
+                <a href=""><b>Appliances</b></a>
+                <!-- start drop down 4 -->
+                <div class="drop4">
+                    <div class="dd-4">
+                        <div class="dd-4-1">
+                            <p id="gray">REFRIGERATORS</p>
+                            <a href="" id="white">All Refrigerators</a><br>
+                            <a href="" id="white">French Door</a><br>
+                            <a href="" id="white">Side by Side</a><br>
+                            <a href="" id="white">Double Door</a><br>
+                            <a href="" id="white">Single door</a><br><br>
+                            <p id="gray">WASHING MACHINES &<br>DRYERS</p>
+                            <a href="" id="white">All Washing Machines & Dryers</a><br>
+                            <a href="" id="white">Washing Machines</a><br>
+                            <a href="" id="white">Dryers</a>
+                        </div>
+                        <div class="dd-4-2">
+                            <p id="gray">VACUUM CLEANERS</p>
+                            <a href="" id="white">All Vacuum Cleaners</a><br>
+                            <a href="" id="white">Jet Stick</a><br>
+                            <a href="" id="white">Jet Bot Robot</a><br><br>
+                            <p id="gray">AIR CONDITIONERS</p>
+                            <a href="" id="white">Split AC</a><br>
+                            <a href="" id="white">VRF</a><br>
+                            <a href="" id="white">Chiller</a><br>
+                            <a href="" id="white">Ventilation</a><br>
+                            <a href="" id="white">Controller</a><br>
+                            <a href="" id="white">Air Purifier</a>
+                        </div>
+                        <div class="dd-4-3">
+                            <p id="gray">COOKING APPLIANCES</p>
+                            <a href="" id="white">All Cooking Appliances</a><br>
+                            <a href="" id="white">Microwave Ovens</a><br><br>
+                            <p id="gray">DISHWASHERS</p>
+                            <a href="" id="white">All Dishwashers</a>
+                        </div>
+                        <div class="dd-4-4"></div>
+                        <div class="dd-4-5">
+                            <p id="gray">DISCOVER</p>
+                            <a href="" id="white">AI Energy Saving</a><br>
+                            <a href="" id="white">Welcome to Bespoke AI</a><br><br>
+                            <p id="gray">BUYING GUIDE</p>
+                            <a href="" id="white">Refrigerators Buying Guide</a><br>
+                            <a href="" id="white">Appliances Buying Guide</a><br>
+                            <a href="" id="white">Washing Machine Buying Guide</a><br>
+                            <a href="" id="white">Microwave Buying Guide</a>
+                        </div>
+                        <div>
+                            <div class="dd-4-6">
+                                <div class="dd-4-6-G1">
+                                    <a href=""><img src="machine15.png" alt="" id="dd-4-6-P1"></a>
+                                    <a href="" id="dd-3-6-H1">Discover Refrigerators</a>
+                                </div>
+                                <div class="dd-4-6-G2">
+                                    <a href=""><img src="machine16.png" alt="" id="dd-4-6-P2"></a>
+                                    <a href="" id="dd-4-6-H2">Discover Washing<br>Machines & Dryers</a>
+                                </div>
+                            </div>
+                            <div class="dd-4-7">
+                                <div class="dd-4-7-G1">
+                                    <a href=""><img src="machine17.png" alt="" id="dd-4-7-P1"></a>
+                                    <a href="" id="dd-4-7-H1">Discover Vacuum<br>Cleaners</a>
+                                </div>
+                                <div class="dd-4-7-G2">
+                                    <a href=""><img src="machine18.png" alt="" id="dd-4-7-P2"></a>
+                                    <a href="" id="dd-4-7-H2">Discover Air Conditioners</a>
+                                </div>
+                            </div>
+                            <div class="dd-4-8">
+                                <div class="dd-4-8-G1">
+                                    <a href=""><img src="machine19.png" alt="" id="dd-4-8-P1"></a>
+                                    <a href="" id="dd-4-8-H1">Discover Cooking<br>Appliances</a>
+                                </div>
+                                <div class="dd-4-8-G2">
+                                    <a href=""><img src="machine20.png" alt="" id="dd-4-8-P2"></a>
+                                    <a href="" id="dd-4-8-H2">Discover All Appliances</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end drop down 4 -->
+            </div>
+            <!-- end appliances -->
+
+            <!-- start computing -->
+            <div class="links-comp">
+                <a href=""><b>Computing & Displays</b></a>
+                <!-- start drop down 5 -->
+                <div class="drop5">
+                    <div class="dd-5">
+                        <div class="dd-5-1">
+                            <p id="gray">GALAXY BOOK & LAPTOPS</p>
+                            <a href="" id="white">All Laptops</a><br>
+                            <a href="" id="white">Galaxy Book 360 & Galaxy Book</a><br>
+                            <a href="" id="white">Laptop Accessories</a><br>
+                            <a href="" id="white">Windows 11</a>
+                        </div>
+                        <div class="dd-5-2">
+                            <p id="gray">COMPUTER MONITORS</p>
+                            <a href="" id="white">All Monitors</a><br>
+                            <a href="" id="white">Odyssey Gaming</a><br>
+                            <a href="" id="white">ViewFinity High Resolution</a><br>
+                            <a href="" id="white">Smart Monitors</a><br>
+                            <a href="" id="white">Flat</a><br>
+                            <a href="" id="white">Curved</a><br>
+                            <a href="" id="white">4K UHD</a><br>
+                            <a href="" id="white">Full HD</a><br><br>
+                            <p id="gray">DISPLAYS FOR BUSINESS</p>
+                            <a href="" id="white">Smart Signage</a><br>
+                            <a href="" id="white">LED Signage</a><br>
+                            <a href="" id="white">Commercial TVs</a><br>
+                            <a href="" id="white">Business Monitors</a>
+                        </div>
+                        <div class="dd-5-3">
+                            <p id="gray">MEMORY & STORAGE</p>
+                            <a href="" id="white">All Memory & Storage</a><br>
+                            <a href="" id="white">NVME SSD</a><br>
+                            <a href="" id="white">SATA</a><br>
+                            <a href="" id="white">SSD</a><br>
+                            <a href="" id="white">Portable SSD</a><br>
+                            <a href="" id="white">Memory Cards</a><br>
+                            <a href="" id="white">USB Flash Drive</a><br>
+                        </div>
+                        <div class="dd-5-4"></div>
+                        <div class="dd-5-5">
+                            <p id="gray">DISCOVER</p>
+                            <a href="" id="white">Why Odyssey Gaming Monitor</a><br>
+                            <a href="" id="white">ViewFinity High Resolution</a><br>
+                            <a href="" id="white">Galaxy Books Download Center</a><br><br>
+                            <p id="gray">BUYING GUIDE</p>
+                            <a href="" id="white">Help choose my Monitor</a>
+                        </div>
+                        <div>
+                            <div class="dd-5-6">
+                                <div class="dd-5-6-G1">
+                                    <a href=""><img src="machine21.png" alt="" id="dd-5-6-P1"></a>
+                                    <a href="" id="dd-5-6-H1">Discover Galaxy Book</a>
+                                </div>
+                                <div class="dd-5-6-G2">
+                                    <a href=""><img src="machine22.png" alt="" id="dd-5-6-P2"></a>
+                                    <a href="" id="dd-5-6-H2">Discover Computer<br>Monitor</a>
+                                </div>
+                            </div>
+                            <div class="dd-5-7">
+                                <div class="dd-5-7-G1">
+                                    <a href=""><img src="machine23.png" alt="" id="dd-5-7-P1"></a>
+                                    <a href="" id="dd-5-7-H1">Discover Memory &<br>Storage</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end drop down 5 -->
+            </div>
+            <!-- end computing -->
+            
+            <a href="" id="links-acc"><b>Accessories</b></a>
+            <a href="" id="links-smart"><b>SmartThings</b></a>
+
+            <!-- start AI -->
+            <div class="links-AI">
+                <a href=""><b>AI</b></a>
+                <!-- start drop down 6 -->
+                <div class="drop6">
+                    <div class="dd-6">
+                        <div class="dd-6-1">
+                            <p id="gray">AI</p>
+                            <a href="" id="white">Galaxy AI</a><br>
+                            <a href="" id="white">Samsung AI TV</a><br>
+                            <a href="" id="white">Bespoke AI</a>
+                        </div>
+                        <div class="dd-6-2"></div>
+                        <div class="dd-6-3">
+                            <p id="gray">DISCOVER</p>
+                            <div class="dd-6-3-G1">
+                                <a href=""><img src="machine24.jpeg" alt="" id="dd-6-3-P1"></a>
+                                <a href="" id="dd-6-3-H1">Discover AI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end drop down 6 -->
+            </div>
+            <!-- end AI -->
+
+        </div>
+        <div class="search">
+            <input type="text" name="name" id="search" placeholder="Search">
+            <a href="" id="s-icon"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+        <div class="icons">
+            <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+    </nav>
+    <div class="top">
+        <!-- start top-support -->
+        <div class="top-support">
+            <a href=""><b>Support</b></a>
+            <!-- start drop down 7 -->
+            <div class="drop7">
+                <div class="dd-7">
+                    <div class="dd-7-1">
+                        <p id="gray">PRODUCT HELP</p>
+                        <a href="" id="white">Support Home</a><br>
+                        <a href="" id="white">Manual & Software</a><br>
+                        <a href="" id="white">Search Support</a><br>
+                        <a href="" id="white">Shop FAQ</a><br><br>
+                        <p id="gray">CONTACT</p>
+                        <a href="" id="white">Chat</a><br>
+                        <a href="" id="white">Call</a><br>
+                        <a href="" id="white">Email</a>
+                    </div>
+                    <div class="dd-7-2">
+                        <p id="gray">REPAIRS & WARRANTY</p>
+                        <a href="" id="white">Warranty Information</a><br>
+                        <a href="" id="white">Service Locator</a><br>
+                        <a href="" id="white">Track Repair</a><br><br>
+                        <p id="gray">ADDITIONAL SUPPORT</p>
+                        <a href="" id="white">News & Alerts</a><br>
+                        <a href="" id="white">Community</a>
+                    </div>
+                    <div class="dd-7-3"></div>
+                    <div class="dd-7-4">
+                        <p id="gray">DISCOVER</p>
+                        <div class="dd-7-5">
+                            <div class="dd-7-5-G1">
+                                <a href=""><img src="machine25.png" alt="" id="dd-7-5-P1"></a>
+                                <a href="" id="dd-7-5-H1">Warranty</a>
+                            </div>
+                            <div class="dd-7-5-G2">
+                                <a href=""><img src="machine26.png" alt="" id="dd-7-5-P2"></a>
+                                <a href="" id="dd-7-5-H2">Manual Download</a>
+                            </div>
+                            <div class="dd-7-5-G3">
+                                <a href=""><img src="machine27.png" alt="" id="dd-7-5-P3"></a>
+                                <a href="" id="dd-7-5-H3">Service Locator</a>
+                            </div>
+                            <div class="dd-7-5-G4">
+                                <a href=""><img src="machine28.png" alt="" id="dd-7-5-P4"></a>
+                                <a href="" id="dd-7-5-H4">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a href=""><b>For Business</b></a>
+    </div>
+    <hr>
+    
+    <!-- <section class="s1">
+        <button id="decrement"><</button>
+        <img src="" alt="" id="x">
+        <button id="increment">></button>
+    </section> -->
+
+    <section class="s1">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" id="s1">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="carousel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>SAMSUNG</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="carousel2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="carousel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 id="c3">Bespoke AI Laundry</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="carousel4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="carousel5.jpg" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" id="next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <section class="s2">
+        <h1 class="week">This Week's Highlights</h1>
+        <div class="options">
+            <a href="" class="new">New In</a>
+            <a href="" id="white-1">Mobile</a>
+            <a href="" id="white-1">TV</a>
+            <a href="" id="white-1">Appliances</a>
+            <a href="" id="white-1">Ecosystem</a>
+            <a href="" id="white-1">Samsung Live</a>
+        </div>
+        <div class="item-1">
+            <div>
+                <a href=""><img src="item-1-1.jpg" alt="" id="item-1-1"></a>
+                <a href="" id="item-1-1-H1"><h3>Galaxy S25 Ultra</h3></a>
+                <a href=""><p id="item-1-1-H2">Avail up to 9000* instant bank discount</p></a>
+            </div>
+            <div>
+                <a href=""><img src="item-1-2.jpg" alt="" id="item-1-2"></a>
+                <a href="" id="item-1-2-H1"><h5>Galaxy Watch 4<br>Starting 19999*</h5></a>
+            </div>
+            <div>
+                <a href=""><img src="item-1-3.jpg" alt="" id="item-1-3"></a>
+                <a href="" id="item-1-3-H1"><h5>Galaxy Bud 3 Pro<br>starting 19999*</h5></a>
+            </div>
+        </div>
+        <div class="item-2">
+            <div>
+                <a href=""><img src="item-2-1.jpg" alt="" id="item-2-1"></a>
+                <a href="" id="item-2-1-H1"><h5>465 L BESPOKE AI<br>Save up to 9500*</h5></a>
+            </div>
+            <div>
+                <a href=""><img src="item-2-2.jpg" alt="" id="item-2-2"></a>
+                <a href="" id="item-2-2-H1"><h5>Music Frame<br>Now at 16416*</h5></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="s3">
+            <img src="section3.jpeg" alt="">
+        </div>
+    </section>
+</body>
+
+<script>
+
+    // drop down 1
+    $(document).ready(function () {
+        $('.links-shop').hover(function () {
+            $('.drop1').css({
+            opacity: 1,
+            visibility: 'visible',
+            transform: 'translateY(0)',
+            });
+        },
+        function () {
+            $('.drop1').css({
+            opacity: 0,
+            visibility: 'hidden',
+            transform: 'translateY(-10px)',
+            });
+        }
+        );
+    });
+
+
+
+    // drop down 2
+    $(document).ready(function(){
+        $(".links-mobile").hover(function(){
+            $(".drop2").css({
+                opacity: 1,
+                visibility: 'visible',
+                transform: 'translateY(0)',
+            });
+        },
+        function (){
+            $(".drop2").css({
+                opacity: 0,
+                visibility: 'hidden',
+                transform: 'translateY(-10px)',
+            });
+        }   
+        );
+    });
+    
+    // drop down 3
+    $(document).ready(function(){
+        $(".links-TV").hover(function(){
+            $(".drop3").css({
+                opacity: 1,
+                visibility: 'visible',
+                transform: 'translateY(0)',
+            });
+        },
+        function (){
+            $(".drop3").css({
+                opacity: 0,
+                visibility: 'hidden',
+                transform: 'translateY(-10px)',
+            });
+        }
+        );
+    });
+
+    //drop down 4
+    $(document).ready(function(){
+        $(".links-app").hover(function(){
+            $(".drop4").css({
+                opacity: 1,
+                visibility: 'visible',
+                transform: 'translateY(0)',
+            });
+        },
+        function (){
+            $(".drop4").css({
+                opacity: 0,
+                visibility: 'hidden',
+                transform: 'translateY(-10px)',
+            });
+        }
+        );
+    });
+
+    //drop down 5
+    $(document).ready(function(){
+        $(".links-comp").hover(function(){
+            $(".drop5").css({
+                opacity: 1,
+                visibility: 'visible',
+                transform: 'translateY(0)',
+            });
+        },
+        function (){
+            $(".drop5").css({
+                opacity: 0,
+                visibility: 'hidden',
+                transform: 'translateY(-10px)',
+            });
+        }
+        );
+    });
+
+    // drop down 6
+    $(document).ready(function(){
+        $(".links-AI").hover(function(){
+            $(".drop6").css({
+                opacity: 1,
+                visibility: 'visible',
+                transform: 'translateY(0)',
+            });
+        },
+        function (){
+            $(".drop6").css({
+                opacity: 0,
+                visibility: 'hidden',
+                transform: 'translateY(-10px)'
+            });
+        }
+        );
+    });
+
+    // drop down 7
+    $(document).ready(function(){
+        $(".top-support").hover(function(){
+            $(".drop7").css({
+                opacity: 1,
+                visibility: 'visible',
+                transform: 'translateY(0)',
+            });
+        },
+        function (){
+            $(".drop7").css({
+                opacity: 0,
+                visibility: 'hidden',
+                transform: 'translateY(-10px)'
+            });
+        }
+        );
+    });
+
+    //carousel
+    // var arr=["carousel1.jpg","carousel2.jpg","carousel3.jpg","carousel4.jpg","carousel5.jpg"]
+    // var dec=document.getElementById("decrement")
+    // var inc=document.getElementById("increment")
+
+    // var a=0;
+    // document.getElementById("x").src=arr[a]
+
+    // dec.addEventListener("click",function(){
+    //     a-=1
+    //     if(a<0){
+    //         a=arr.length-1
+    //     }
+    //     document.getElementById("x").src=arr[a]
+    // })
+
+    // function plus(){
+    //     a+=1
+    //     if(a>(arr.length-1)){
+    //         a=0
+    //     }
+    //     document.getElementById("x").src=arr[a]
+    // }
+
+    // inc.addEventListener("click",plus)
+    // setInterval(plus,5000)
+</script>
+
+</html>
