@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                margin: 0px;
+            }
+
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 17%;
+                position: sticky;
+                top: 0px;
+                z-index: 10;
+            }
+
+            #logo{
+                width: 20px;
+                height: 20px;
+                color: black;
+                position: relative;
+                right: 10px;
+            }
+
+            /* #logo1{
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                right: 10px;
+            } */
+
+            .links a{
+                text-decoration: none;
+                color: black;
+                padding: 0px 15px;
+                font-size: 13px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .links a:hover{
+                text-decoration: none;
+                border-bottom: 2px solid;
+            }
+
+            /* .links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 15px;
+            } */
+
+            .icons a{
+                padding: 0px 17px;
+                position: relative;
+                right: 10px; 
+            }
+
+            .fa{
+                padding: 0px 0px;
+                color: black;
+            }
+
+            #s1{
+                background-color: rgb(228, 228, 228);
+                width: 1519px;
+                height: 570px;
+            }
+
+            .blue1{
+                background-color: rgb(3, 116, 229);
+                width: 300px;
+                height: 225px;
+                border-radius: 60px;
+                position: absolute;
+                left: 600px;
+                top: 100px;
+                transform: rotate(-5deg);  
+            }
+
+            .blue1-2{
+                color: white;
+                font-size: xxx-large;
+                position: absolute;
+                left: 640px;
+                top: 130px;
+                transform: rotate(-5deg);
+                border-radius: 60px;
+            }
+
+            .blue2{
+                background-color: rgb(3, 116, 229);
+                width: 230px;
+                height: 40px;
+                border: 1px solid white;
+                border-radius: 40px;
+                transform: rotate(-3deg);
+                position: absolute;
+                left: 670px;
+                top: 315px;
+                z-index: 1;
+            }
+
+            .blue2-1{
+                color: black;
+                font-size: 18px;
+                position: absolute;
+                left: 685px;
+                top: 327px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                transform: rotate(-3deg);
+                border-radius: 40px;
+            }
+
+            .blue3{
+                background-color: rgb(3, 116, 229);
+                width: 275px;
+                height: 90px;
+                border-radius: 40px;
+                transform: rotate(5deg);
+                position: absolute;
+                left: 660px;
+                top: 360px;  
+            }
+
+            .blue3-1{
+                font-size: xx-large;
+                color: white;
+                position: absolute;
+                left: 690px;
+                top: 365px;
+                transform: rotate(5deg);
+                border-radius: 40px;
+            }
+
+            #heart{
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                left: 550px;
+                top: 75px;  
+            }
+
+            #ipad1{
+                position: absolute;
+                left: 490px;
+                top: 280px;
+            }
+
+            #lap{
+                position: absolute;
+                left: 820px;
+                top: 80px;
+            }
+
+            #ipad2{
+                position: absolute;
+                left: 900px;
+                top: 330px;
+            }
+
+            .gray{
+                background-color: rgb(180, 179, 179);
+                width: 240px;
+                height: 40px;
+                border-radius: 40px;
+                position: absolute;
+                left: 650px;
+                top: 470px;
+
+            }
+
+            .gray1{
+                position: absolute;
+                left: 670px;
+                top: 473px;
+                font-size: large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 5px;
+            }
+
+            /* #button1{
+                position: absolute;
+                left: 650px;
+                top: 500px;
+                padding: 10px 100px;
+                border-radius: 20px;
+                border: none;
+                color: black;        
+            }
+
+            #button1-2{
+                text-decoration: none;
+                color: black;
+                padding: 0px 10px;
+            } */
+
+            .blue4{
+                background-color: rgb(3, 116, 229);
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                left: 870px;
+                top: 463px;
+            }
+
+            .blue4-1{
+                color: white;
+                position: absolute;
+                left: 877px;
+                top: 465px;
+            }
+
+            #button1{
+                color: blue;
+                text-decoration: none;
+                border-radius: 30px;
+                padding: 10px 20px;
+                border: 1px solid blue;
+                position: absolute;
+                left: 720px;
+                top: 530px;
+            }
+
+            #button1-2{
+                color: blue;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            #s2{
+                background-image: url("appleblack.jpg");
+                height: 550px;
+                width: 1519px;
+                background-size: cover;
+                background-position: center;
+                margin-top: 10px;
+            }
+
+            .apple{
+                position: absolute;
+                color: white;
+                font-size: 38px;
+                left: 600px;
+                top: 900px;
+            }
+
+            .apple1{
+                color: white;
+                position: absolute;
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                left: 550px;
+                top: 1020px;
+            }
+
+            #button2{
+                background-color: rgb(3, 116, 229);
+                border-radius: 30px;
+                border: none;
+                padding: 10px 20px;
+                position: absolute;
+                left: 700px;
+                top: 1080px;
+            }
+
+            #button2-1{
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            #s3{
+                background-color: rgb(228, 228, 228);
+                width: 1519px;
+                height: 550px;
+                margin-top: 10px;
+            }
+
+            .macbook{
+                position: absolute;
+                font-size: 36px;
+                left: 600px;
+                color: black;
+            }
+
+            .lean{
+                position: absolute;
+                font-size: 28px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                left: 600px;
+                top: 1290px;
+            }
+
+            .air{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 40%;
+                position: absolute;
+                top: 1350px;
+                gap: 30px;
+                left: 50px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img id="logo" src="logo.png" alt>
+            </div>
+            <div class="links">
+                <a href>Store</a>
+                <a href>Mac</a>
+                <a href>iPad</a>
+                <a href>iPhone</a>
+                <a href>watch</a>
+                <a href>Vision</a>
+                <a href>Airpods</a>
+                <a href>TV & Home</a>
+                <a href>Entertainment</a>
+                <a href>Accessories</a>
+                <a href>Support</a>
+            </div>
+            <div class="icons">
+                <a href><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a href><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+        <section id="s1">
+            <div class="blue1"></div>
+            <div class="blue1-2"><b>Buy Mac<br>or iPad<br>for Uni</b></div>
+            <div class="blue2"></div>
+            <div class="blue2-1"><b>with education savings</b></div>
+            <div class="blue3"></div> 
+            <div class="blue3-1"><b>Get a gift card<br>upto $120*</b></div> 
+            <div>
+                <img id="heart" src="heart.png" alt="">
+            </div>
+            <div>
+                <img id="ipad1" src="ipad1.png" alt="">
+            </div>
+            <div>
+                <img id="lap" src="lap.png" alt="">
+            </div>
+            <div>
+                <img id="ipad2" src="ipad2.png" alt="">
+            </div>
+            <div class="gray"></div>
+            <div class="gray1">Only at the Apple Store</div>
+            <!-- <button id="button1"><a href="" id="buttin1-2">Only at the Apple Store</a></button> -->
+            <div class="blue4"></div>
+            <div class="blue4-1"><b>!!</b></div>
+            <button id="button1"><a href="" id="button1-2">Shop</a></button>
+        </section>
+        <section id="s2">
+            <div class="apple"><h1><b>Apple Event</b></h1></div>
+            <div class="apple1">Watch online on 09/09 at 6 pm.</div>
+            <button id="button2"><a href="" id="button2-1">Learn more</a></button>
+        </section>
+        <section id="s3">
+            <div class="macbook"><h1><b>MacBook Air</b></h1></div>
+            <div class="lean">Lean. Mean. M3 machine.</div>
+            <div class="air">
+                <button id="button3"><a href="" id="button3-1">Learn more</a></button>
+                <button id="button4"><a href="" id="button4-1">Buy</a></button>
+            </div>
+            <!-- <button id="button3"><a href="" id="button3-1">Learn more</a></button>
+            <button id="button4"><a href="" id="button4-1">Buy</a></button> -->
+        </section>
+        <img src="10001 (1).jpg" alt="">
+
+        
+    </body>
+</html>
